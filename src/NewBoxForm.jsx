@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {v4 as uuid} from "uuid";
 
 
-const NewBoxForm = ({newBox}) => {
+function NewBoxForm ({ newBox }) {
     const INITIAL_STATE = {
         width: "",
         height: "",
@@ -21,6 +21,7 @@ const NewBoxForm = ({newBox}) => {
         e.preventDefault();
         newBox({...formData, id: uuid() });
         setFormData(INITIAL_STATE);
+        // setFormData({width:"", height:"", backgroundColor: ""});
     };
 
     return (
