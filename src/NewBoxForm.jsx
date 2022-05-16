@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { useFormik } from "formik";
 import {v4 as uuid} from "uuid";
 
 
@@ -51,6 +50,7 @@ const NewBoxForm = ({newBox}) => {
                 value={formData.backgroundColor}
                 onChange={handleChange}
                 />
+                <button>Create new box!</button>
             </form>
         </div>
     );
